@@ -19,7 +19,7 @@ public class HttpServer {
         HttpServer.getInstance().startServer(args);
     }
     public void startServer(String[] args) throws IOException {
-        int port = 35000;
+        int port = getPort();
         ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(port);
